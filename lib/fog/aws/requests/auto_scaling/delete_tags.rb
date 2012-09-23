@@ -53,7 +53,7 @@ module Fog
           if tags.to_a.empty?
             raise Fog::AWS::AutoScaling::ValidationError.new("1 validation error detected: Value null at 'tags' failed to satisfy constraint: Member must not be null")
           end
-          raise Fog::Mock::NotImplementedError
+          Fog::Mock.not_implemented
         end
 
       end

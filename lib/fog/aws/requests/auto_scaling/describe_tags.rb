@@ -64,7 +64,7 @@ module Fog
       class Mock
 
         def describe_tags(options={})
-          raise Fog::Mock::NotImplementedError
+          Fog::Mock.not_implented
         end
 
       end
